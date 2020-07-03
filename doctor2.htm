@@ -1,0 +1,116 @@
+<?php
+session_start(); 
+$con=mysqli_connect("localhost","root","");
+if(!$con)
+die("could not connect".mysqli_error());
+
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body:before{
+height:100%;
+width:100%;
+background-image:url("https://previews.123rf.com/images/didecs/didecs1503/didecs150300010/37355088-wooden-doctor-desk-with-copy-space.jpg");
+background-size:cover;
+content:"";
+position:fixed;
+top:0;
+left:0;
+z-index:-100;
+}
+ul li{
+width:220px;
+height:50px;
+font-size:25px;
+border-width:2px;
+line-height:50px;
+text-align:center;
+border-radius:10px;
+background:linear-gradient(#252d80,#313e78);
+color:white;
+list-style:none;
+float:left;
+margin-right:10px;
+}
+ul li a{
+text-decoration:none;
+color:white;
+font-family:Times New Roman;
+}
+ul li a:hover{
+background-color:#3e558a;
+display:block;
+}
+ul li ul {
+list-style:none;
+display:none;
+background-color:green;
+}
+ul li ul li{
+font-size:20px;
+display:block;
+border-radius:10px;
+height:50px;
+line-height:50px;
+padding:10px 0 10px 0 ;
+border:1px solid white;
+margin-left:-39px;
+
+}
+ul li:hover ul{
+display:block;
+}
+
+</style>
+</head>
+<body>
+<ul>
+<li><a href=file:///C:/Users/Veenu/Desktop/projectdatabase.htm>HOME</a></li>
+<li><a href=#about>ABOUT US</a>
+<ul>
+<li><a href=file:///C:/Users/Veenu/Downloads/eg2.html>Introduction</a></li>
+<li><a href=#rules>Rules & Regulation</a></li>
+<li><a href=#staff>Staff info</a></li>
+</ul>
+</li>
+<li><a href=#departments>DEPARTMENTS</a>
+<ul>
+<li><a href=#skin>Skin</a></li>
+<li><a href=#orthipaedic>orthopaedic</a></li>
+<li><a href=#surgery>Surgery</a></li>
+<li><a href=#cardiology>cardiology</a></li>
+<li><a href=#radiology>Radiology</a></li>
+</li>
+</ul>
+<li><a href=#aapointment>APPOINTMENT</a>
+
+</li>
+<li><a href=#events>EVENTS</a>
+<ul>
+<li><a href=#conference>Conference </a></li>
+<li><a href=file:///C:/Users/Veenu/Downloads/events.html>Upcoming Events</a></li>
+</ul>
+</li>
+<li><a href=file:///C:/Users/Veenu/Downloads/contact.html>CONTACT US</a></li>
+<li><a href=file:///C:/Users/Veenu/Desktop/emergency.htm>EMERGENCY</a></li>
+</ul>
+<div>
+<p><?php echo $_SESSION["department"] ?> Doctors available on <?php echo $_SESSION["date"] ?>...
+<form method="post" action="doctor2.php">
+<input type="radio" name="docname" value="docname" checked class="check"><p class="p1">
+<?php
+mysqli_select_db($con,"hospital");
+$sql="select docname from doctor
+where department=$_SESSION["department"] and sno='1' "; 
+$query_run=mysqli_query($con,$sql);
+while($rows=mysqli_fetch_array($query_run)
+{
+echo $rows["docname"];
+}
+?></p><br>
+
+</body>
+</html>
