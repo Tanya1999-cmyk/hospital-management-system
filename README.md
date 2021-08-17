@@ -35,3 +35,26 @@
  
  ![xxamp](https://user-images.githubusercontent.com/53026472/129787020-6092add1-2247-4325-a836-c91e404f0d14.png)
  
+ ## GETTING INTO THE PROJECT:
+ Following are some of the snaps that show the different functionalities this project offers to the doctors and patients.
+ ![Screenshot (478)](https://user-images.githubusercontent.com/53026472/129789045-5d34740f-9f89-4664-aa7e-fd81a023e435.png)
+
+![Screenshot (479)](https://user-images.githubusercontent.com/53026472/129789184-55d73829-44f7-496b-8191-62e3686a47b3.png)
+
+![Screenshot (480)](https://user-images.githubusercontent.com/53026472/129789238-8c836827-1e26-478b-81ec-11603864a5f7.png)
+
+![Screenshot (482)](https://user-images.githubusercontent.com/53026472/129789264-66d85774-bfd7-40eb-92e1-8e650069cd94.png)
+
+![Screenshot (484)](https://user-images.githubusercontent.com/53026472/129789301-99547a75-352a-4ab3-9c98-aa7da42463ae.png)
+
+![Screenshot (485)](https://user-images.githubusercontent.com/53026472/129789350-3f686829-ee76-413e-893e-237ef781f546.png)
+
+![Screenshot (488)](https://user-images.githubusercontent.com/53026472/129789383-1e533b84-e0cf-44e8-9938-d76df7fbafd2.png)
+
+![Screenshot (489)](https://user-images.githubusercontent.com/53026472/129789419-36b20afc-4827-46d5-a578-82dd249052a0.png)
+
+![Screenshot (491)](https://user-images.githubusercontent.com/53026472/129789451-01ac279f-d97a-44c6-9b96-1d3eafad0ab4.png)
+
+![Screenshot (493)](https://user-images.githubusercontent.com/53026472/129789477-ccba44c9-61b5-43d1-9f77-607543ce0904.png)
+
+ 
